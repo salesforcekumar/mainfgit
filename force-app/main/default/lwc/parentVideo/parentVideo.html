@@ -1,0 +1,15 @@
+<template>
+<lightning-card title="PARENT TO CHILD METHOD DATA PASSING">
+
+        <c-child-video my-name={parentValue}></c-child-video>
+
+    <lightning-button label="click to change value" onclick={handelchange}></lightning-button>
+
+    <div>
+                
+        <lightning-button variant="brand" label="Call Child" title="callchild" icon-name="utility:download" class="slds-m-left_x-small" onclick={handelcall}></lightning-button> 
+
+    </div>
+</lightning-card>
+
+</template>

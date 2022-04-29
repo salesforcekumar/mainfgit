@@ -1,0 +1,23 @@
+<template>
+
+    <lightning-card title="PARENT TO CHILD METHOD DATA PASSING">
+
+    <div>
+        <h2>
+            CALCULATOR
+        </h2>
+
+        <lightning-input value={firstnNumber} name="fnumber" label="First number"  onchange={handlechanges}></lightning-input>
+        <lightning-input value={secondNumber} name="snumber" label="Second number" onchange={handlechanges}></lightning-input>
+      
+        <div slot="footer">
+         <!--  <lightning-badge label={result}></lightning-badge> -->
+         <c-result-comp result={result1}></c-result-comp>
+            
+       </div>
+        
+    </div>
+
+</lightning-card>
+    
+</template>
