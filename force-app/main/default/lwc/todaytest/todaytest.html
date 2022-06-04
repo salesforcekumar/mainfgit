@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="DISPLAY ACCOUNT USING FOR EACH AND WIRE">
+    <div>
+        <template for:each={data} for:item="account" > 
+            <p key={account.id}> {account.Name}
+                 <b> {account.Type}</b>
+                 <b> {account.Phone}</b>
+                     {account.Industry}
+            </p>   
+        </template> 
+    </div>
+</lightning-card>
+</template>
+
+
